@@ -32,13 +32,13 @@ public class Main {
         //methode 3-a
         /*Arme poing = new Arme("poing", 10, 5);
         Personnage lePersonnage = new Personnage("perso", 100, 50, 1, poing, null);
-        System.out.println("Attaque du joueur : " + lePersonnage.attaquer());*/
+        System.out.println("Attaque du personnage : " + lePersonnage.attaquer());*/
 
 
         //methode 3-b
         /*Armure armure = new Armure("Habit", 5, 3, 10);
         Personnage lePersonnage = new Personnage("perso", 100, 50, 1, null, armure);
-        System.out.println("Défense du joueur : " + lePersonnage.getDefense());*/
+        System.out.println("Défense du personnage : " + lePersonnage.getDefense());*/
 
 
         //methode 3-c
