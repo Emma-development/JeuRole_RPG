@@ -56,7 +56,7 @@ public class Marche {
     public Armure acheterArmure(int indexArmure) {
         if (indexArmure >= 0 && indexArmure < lesArmuresAVendre.size()) {
             Armure armureAchetee = lesArmuresAVendre.get(indexArmure);
-            lesArmuresAVendre.remove(indexArmure); // Correction ici !
+            lesArmuresAVendre.remove(indexArmure);
             return armureAchetee;
         }
         return null;
