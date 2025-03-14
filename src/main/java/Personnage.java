@@ -66,17 +66,17 @@ public class Personnage {
         this.armure = armure;
     }
 
-    //Méthode1-a
+    //Méthode3-a
     public int attaquer() {
             return this.arme.getAtk();
     }
 
-    //Méthode1-b
+    //Méthode3-b
     public int getDefense() {
             return this.armure.getDef();
     }
 
-    //Méthode1-c
+    //Méthode3-c
     public void prendreDegats(int quantiteDegats) {
         this.pv = this.pv - quantiteDegats;
 
@@ -85,7 +85,7 @@ public class Personnage {
         }
     }
 
-    //Méthode1-d
+    //Méthode3-d
     public boolean estVivant() {
         if (this.pv > 0) {
             return true;
@@ -95,7 +95,7 @@ public class Personnage {
     }
 
 
-    //Méthode1-e
+    //Méthode3-e
     public int fuite() {
         Random rand = new Random();
         int fuite = rand.nextInt(101);

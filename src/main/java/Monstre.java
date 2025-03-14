@@ -80,17 +80,18 @@ public class Monstre {
         this.seuilFuite = seuilFuite;
     }
 
-    //Méthode2-a
+
+    //Méthode4-a
     public int attaquer() {
             return this.arme.getAtk();
     }
 
-    //Méthode2-b
+    //Méthode4-b
     public int getDefense() {
             return this.armure.getDef();
     }
 
-    //Méthode2-c
+    //Méthode4-c
     public void prendreDegats(int quantiteDegats) {
         this.pv -= quantiteDegats;
         if (this.pv < 0) {
@@ -98,7 +99,7 @@ public class Monstre {
         }
     }
 
-    //Méthode2-d
+    //Méthode4-d
     public boolean estVivant() {
         if (this.pv > 0) {
             return true;

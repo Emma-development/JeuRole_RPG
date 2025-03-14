@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -43,7 +42,7 @@ public class Jeu {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Saisissez le nom de votre personnage :");
         String nom = scanner.nextLine();
-        this.lePersonnage = new Personnage(nom, 100, 20, 0, null, null) ;
+        this.lePersonnage = new Personnage(nom, 100, 20, 1, null, null) ;
     }
 
 

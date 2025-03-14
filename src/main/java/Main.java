@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -6,40 +8,29 @@ public class Main {
         Armure habits = new Armure("Habits", 1, 0, 10);
 
         //arme + armure supplementaire
-        Arme epee = new Arme("Épée", 30, 50);
+        Arme epee = new Arme("Épée", 30, 60);
         Arme arc = new Arme("Arc", 25, 80);
-        Arme griffe = new Arme("Griffe", 25, 0);
+        Arme griffe = new Arme("Griffe", 15, 0);
         Armure armureDeChevalier = new Armure("Armure de chevalier", 15, 10, 150);
-        Armure bouclier = new Armure("Bouclier", 5, 4, 30);
+        Armure bouclier = new Armure("Bouclier", 5, 5, 30);
 
         //personnage
         Personnage lePersonnage = new Personnage("perso", 100, 50,2, poing, habits);
 
         //monstres
-        Monstre dragon = new Monstre("Dragon", 100, 10, 5,
-                new Arme("Griffe", 25, 0),
-                new Armure("Bouclier", 5, 4, 30), 50, 20
+        Monstre dragon = new Monstre("Dragon", 100, 10, 3,
+                new Arme("Griffe", 15, 0),
+                new Armure("Bouclier", 5, 5, 30), 50, 20
         );
-        Monstre Loup = new Monstre("Loup", 100, 10, 5,
-                new Arme("Griffe", 25, 0),
-                new Armure("null", 5, 4, 30), 50, 20
+        Monstre Loup = new Monstre("Loup", 100, 25, 3,
+                new Arme("Griffe", 15, 0),
+                new Armure("null", 5, 5, 30), 50, 20
         );
-
-        /*//marches
-        Marche marche = new Marche("Arènes");
-        marche.ajouterArme(epee);
-        marche.ajouterArme(arc);
-        marche.ajouterArmure(bouclier);
-        marche.ajouterArmure(casque);*/
-
-
-
-
 
 
 
         //methode 3-a
-        /*Arme poing = new Arme("poing", 10, 5); // ATK = 10
+        /*Arme poing = new Arme("poing", 10, 5);
         Personnage lePersonnage = new Personnage("perso", 100, 50, 1, poing, null);
         System.out.println("Attaque du joueur : " + lePersonnage.attaquer());*/
 
@@ -49,13 +40,13 @@ public class Main {
         Personnage lePersonnage = new Personnage("perso", 100, 50, 1, null, armure);
         System.out.println("Défense du joueur : " + lePersonnage.getDefense());*/
 
+
         //methode 3-c
 
         /*Personnage lePersonnage = new Personnage("perso", 100, 50, 1, null, null);
         System.out.println("PV avant degats : " + lePersonnage.getPv());
         lePersonnage.prendreDegats(20);
         System.out.println("PV apres degats : " + lePersonnage.getPv());*/
-
 
 
         //methode 3-d
@@ -65,28 +56,18 @@ public class Main {
         System.out.println("leMonstre est vivant ? " + leMonstre.estVivant());*/
 
 
-        //methode 3-e
+        //methode 6-a
+        /*Scanner scanner = new Scanner(System.in);
 
-        /*Armure armure = new Armure("Habit", 10, 30, 10);
-        Personnage lePersonnage3 = new Personnage("perso", 100, 50, 1, null, armure);
-
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Chance de fuite : " + lePersonnage3.fuite());
-        }*/
-
-        /*Marche marche = new Marche(null);
-        marche.acheterArme()Arme(new Arme("Épée", 20, 100));
-        marche.acheterArme(new Arme("Hache", 25, 150));
-
-        System.out.println("Armes avant achat : " + marche.getLesArmesAVendre().size()); // 2
-
-        // Achat d'une arme
-        Arme armeAchetee = marche.acheterArme(0);
-        System.out.println("Arme achetée : " + armeAchetee.getNom()); // Épée
-
-        System.out.println("Armes après achat : " + marche.getLesArmesAVendre().size());*/
-
+        System.out.print("Entrez le nom de votre personnage : ");
+        String nom = scanner.nextLine();
+        Personnage personnage = new Personnage(nom, 100, 35, 1, new Arme("Epee", 25, 80), new Armure("Armure de chevalier", 15, 10, 150));
+        System.out.println("Nom : " + personnage.getNom());
+        System.out.println("PV : " + personnage.getPv());
+        System.out.println("Or : " + personnage.getOr());
+        System.out.println("Niveau : " + personnage.getNiveau());
+        System.out.println("Arme : " + personnage.getArme().getNom());
+        System.out.println("Armure : " + personnage.getArmure().getNom());*/
 
     }
 }
-
